@@ -69,7 +69,7 @@ function createFlowMessage(request) {
     message.external_thread_id = requestJson.issue.key;
 
     message.thread = {};
-    message.thread.title = requestJson.issue.key + ":" + requestJson.issue.fields.summary;
+    message.thread.title = requestJson.issue.key + ": " + requestJson.issue.fields.summary;
     message.thread.body = valueOrEmpty(requestJson.issue.fields.description);
     message.thread.external_url = baseurl + "/browse/" + requestJson.issue.key;
     message.thread.status = {};
