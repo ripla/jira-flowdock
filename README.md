@@ -1,0 +1,1 @@
+Simple integration between JIRA and Flowdock. Implemented with NodeJS, this mediator relies on JIRA webhooks and the Flowdock API to send issue updates to your flow inbox.
